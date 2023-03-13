@@ -566,7 +566,7 @@ article p {
 }
 article h3 {
   padding-top: 10px;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 28px;
   line-height: 38px;
   color: #1a171e;
@@ -669,7 +669,7 @@ article h3 {
   z-index: 1000;
   transition: all 0.3s ease-in-out;
 }
-.sticky-header.sticky {
+/* .sticky-header.sticky {
   top: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -686,6 +686,23 @@ article h3 {
   width: 100%;
 }
 .blog__btnNext .blog__button-text {
+  left: inherit;
+  right: 0;
+} */
+.fixed-element {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.fixed-element.fixed {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 200px;
+  z-index: 100;
+  /* adjust the styles as needed */
+}
+.blog__btnNext .fixed-element.fixed {
   left: inherit;
   right: 0;
 }
