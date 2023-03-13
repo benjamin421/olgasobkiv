@@ -695,11 +695,10 @@ article h3 {
 
 .fixed-element.fixed {
   position: fixed;
-  top: 90px;
+  top: 310px;
   left: 0;
   width: 200px;
   z-index: 100;
-  /* adjust the styles as needed */
 }
 .blog__btnNext .fixed-element.fixed {
   left: inherit;

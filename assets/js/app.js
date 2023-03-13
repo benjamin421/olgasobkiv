@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
 var fixedElements = document.querySelectorAll('.fixed-element');
 
 window.addEventListener('scroll', function() {
-  if (window.scrollY >= 220) {
+  if (window.scrollY >= 0) {
     fixedElements.forEach(function(element) {
       element.classList.add('fixed');
     //   document.body.style.paddingTop = element.offsetHeight + 'px';
