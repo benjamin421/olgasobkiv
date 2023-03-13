@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Arial";
+  src: url("../fonts/ArialMT.woff2") format("woff2"),
+    url("../fonts/ArialMT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --abril-font: "Abril Fatface", cursive;
 }
@@ -648,3 +656,36 @@ article h3 {
   max-height: 680px;
 }
 /* end solo project */
+.banner__area {
+  margin-top: 90px;
+}
+.sticky-header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.sticky-header.sticky {
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.blog__button-text {
+  position: fixed;
+  top: 360px;
+  max-width: 150px;
+  width: 100%;
+  left: 0;
+}
+.blog__btnPrev,
+.blog__btnNext {
+  position: relative;
+  width: 100%;
+}
+.blog__btnNext .blog__button-text {
+  left: inherit;
+  right: 0;
+}
