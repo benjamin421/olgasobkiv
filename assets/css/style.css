@@ -112,7 +112,8 @@ header {
   font-weight: 900;
   text-align: center;
   display: inline-block;
-  font-size: 28px;
+  font-size: 16px;
+  font-weight: 900;
   line-height: 23px;
   -webkit-font-feature-settings: "salt" on;
   font-feature-settings: "salt" on;
