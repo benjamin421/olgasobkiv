@@ -67,6 +67,8 @@ body {
   font-family: "Arial", "Helvetica", "sans-serif";
   font-size: 16px;
   color: #1a171e;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 /* header */
 header {
@@ -216,14 +218,19 @@ header {
   color: #1a171e;
 }
 /* Project Page */
-.project__top-item {
-  display: -ms-grid;
+.projects__wrapper {
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+.project__top-item {
+  display: flex;
+  flex-direction: column;
 }
 .project__blog {
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 .project__blog img {
   height: 100%;
@@ -287,12 +294,17 @@ header {
 }
 .projects__footer .project__blog {
   max-width: 340px;
+  display: flex;
+  max-height: 560px;
+  height: 100%;
 }
 .small__blog {
   max-width: 340px;
+  width: 100%;
+  height: 100%;
 }
 .project__footer-blank {
-  height: 220px;
+  padding: 110px;
   background: #fff;
 }
 .bottom__footer {
@@ -668,6 +680,9 @@ article h3 {
   background-color: #fff;
   z-index: 1000;
   transition: all 0.3s ease-in-out;
+  max-width: 1920px;
+  margin: 0 auto;
+  right: 0;
 }
 /* .sticky-header.sticky {
   top: 0;
@@ -704,4 +719,14 @@ article h3 {
 .blog__btnNext .fixed-element.fixed {
   left: inherit;
   right: 0;
+}
+.bp_1,
+.bp_2,
+.bp_3,
+.bp_6 {
+  max-height: 560px;
+}
+.bp_4,
+.bp_5 {
+  max-height: 1260px;
 }
